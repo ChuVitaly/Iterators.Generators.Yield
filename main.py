@@ -1,10 +1,10 @@
 
 # Task1
-nested_list = [
-    ['a', 'b', 'c'],
-    ['d', 'e', 'f', 'h', False],
-    [1, 2, None],
-]
+# nested_list = [
+#     ['a', 'b', 'c'],
+#     ['d', 'e', 'f', 'h', False],
+#     [1, 2, None],
+# ]
 
 # Вариант 1
 # k = 0
@@ -18,8 +18,25 @@ nested_list = [
 
 
 # Вариант 2
+# result = list()
+# for i in (i for lst in nested_list for i in lst):
+#     # print(i, end=', ')
+#     result.append(i)
+# print(result)
+
+
+# Task2
+
+nested_list = [
+	['a', 'b', 'c'],
+	['d', 'e', 'f'],
+	[1, 2, None],
+]
+
+result = list()
 for i in (i for lst in nested_list for i in lst):
-    print(i)
+    result.append(i)
+print(result)
 
 
 
